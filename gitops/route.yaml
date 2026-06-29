@@ -6,7 +6,9 @@ metadata:
     app: hello-world
 spec:
   port:
-    targetPort: http
+    targetPort: https
+  tls:
+    termination: passthrough
   to:
     kind: Service
     name: hello-world-service
