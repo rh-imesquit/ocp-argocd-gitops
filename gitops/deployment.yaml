@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: hello-world-container
-        image: quay.io/openshifttest/nodewebapp:latest
+        image: image: registry.access.redhat.com/ubi8/nginx-120:latest
         ports:
         - containerPort: 8080
         resources:
