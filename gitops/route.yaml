@@ -6,9 +6,10 @@ metadata:
     app: hello-world
 spec:
   port:
-    targetPort: https
+    targetPort: http
   tls:
-    termination: passthrough
+    termination: edge
+    insecureEdgeTerminationPolicy: Redirect
   to:
     kind: Service
     name: hello-world-service
